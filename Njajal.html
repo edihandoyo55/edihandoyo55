@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width"initial-scale=1.0">
+    <title>Show hidden button</title>
+    </head>
+<body>
+    <button id="btn">Show</button>
+    <div id="kon">Saya mencoba menyembunyikan dan menampilkan pesan dalam sebuah button</div>
+</body>
+<style>
+    #btn{
+         background-color: #4CAF50;
+         border: none;
+         color: #fff;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 8px;
+         transition: bacgrund-color 03.s ease;
+    }
+    #btn:hover{
+    background-color: #3e8e41;
+    }
+    #kon{
+        display: none;
+        padding: 20px;
+        background-color: #fefefe;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: opacity 0.5s ease;
+    }
+    #kon.show{
+        display: block;
+        opacity: 1;
+    }
+    #kon.hide{
+        opacity: 0;
+    }
+</style>
+<script>
+    const tombol =document.getElementById('tombol');
+    const konten = document.getElementById("konten');")
+
+    tombol.addEventListener 'click' , function(){
+        if (konten.style.display=='block'){
+            konten.classList.remove ('show');
+            konten.classList.add ('hidden');
+            setTimeout(() => {
+                konten.styledisplay'none';
+            },500)
+        }else {
+            konten.style.display'block';
+            konten.classList.remove ('hide')
+            konten.classList.add
+        }
+    }
+</script>
+</html>
